@@ -4,8 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio LReis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
-    
+    <header>
+        <div class="particulas"></div>
+        <div class="container">
+            <p alt="logo">LZ<span>Reis</span></p>
+            <nav>
+                <button id="btn-home" class="animation" onclick="toSectionHome()">
+                    <i class="ri-home-4-line"></i>
+                    Home
+                </button>
+                <button id="btn-projetos" class="animation" onclick="toSectionProj()">
+                    <i class="ri-briefcase-line"></i>
+                    Projetos
+                </button>
+                <button id="btn-sobre" class="animation" onclick="toSectionAbout()">
+                    <i class="ri-chat-smile-2-line"></i>
+                    Sobre mim
+                <button id="btn-contato" class="animation" onclick="toSectionContact()">
+                    <i class="ri-user-line"></i>
+                    Contato
+                </button>
+            </nav>
+            <i class="ri-menu-line" onclick="openSidebar()"></i>
+        </div>
+        <nav class="sidebar" id="sideBar">
+            <i class="ri-close-large-line" onclick="closeSidebar()"></i>
+            <button id="btn-home" class="animation" id="close" onclick="toSectionHome()">
+                <i class="ri-home-4-line"></i>
+                Home
+            </button>
+            <button id="btn-projetos" class="animation" onclick="toSectionProj()">
+                <i class="ri-briefcase-line"></i>
+                Projetos
+            </button>
+            <button id="btn-sobre" class="animation" onclick="toSectionAbout()">
+                <i class="ri-chat-smile-2-line"></i>
+                Sobre mim
+            <button id="btn-contato" class="animation" onclick="toSectionContact()">
+                <i class="ri-user-line"></i>
+                Contato
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="box-introduction">
+                <div class="info-introduction">
+                    <h1>Olá! Este é <span>Lucas</span></h1>
+                    <h3>Eu sou <span class="text-animation"></span></h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores minima voluptatem corporis, culpa quo non quod labore, ipsam voluptatibus a deserunt fugiat similique quos cupiditate illo quasi nihil saepe.
+                    </p>
+                    <div class="plataformas">
+                        <i class="ri-instagram-line" onclick="openInsta()"></i>
+                        <i class="ri-github-fill" onclick="openGit()"></i>
+                    </div>
+                    <div class="button">
+                        <button class="contato" onclick="openWhats()">Contato</button>
+                    </div>
+                </div>
+                <div class="foto">
+                    <img src="img/minha-foto.jpg" alt="foto" width="600px" height="600px" style="display: block;">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="background-projects">
+                <h1><span>Projetos </span> feitos por mim</h1>
+                <div class="box-projects">
+                    <div class="project">
+                        <img src="img/" alt="projeto 1" width="100%" height="100%">
+                        <div class="info-project">
+                            <h2>Projeto 1</h2>
+                            <h3>Feito por: <span></span><span></span><span></span></h3>
+                            <div class="btn-project">
+                                <button>Visitar site</button>
+                                <button>Visitar código</button>
+                                <button>Visitar design</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="box-about">
+                <h1>Um pouco <span>sobre mim</span></h1>
+                <div class="box-info-about">
+                    <div class="info-about">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere libero nesciunt sint quaerat mollitia soluta ipsam, voluptates, similique asperiores corporis dicta perferendis quisquam inventore nemo natus perspiciatis optio ipsum? Quas!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sit sequi nesciunt quaerat distinctio labore, quasi fuga accusantium, quos ex tempora aspernatur, explicabo tempore corporis illo quas culpa nisi suscipit.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam inventore quasi, cupiditate praesentium, aliquid aspernatur voluptatibus tempora, esse error temporibus consequuntur quibusdam ducimus impedit. Obcaecati mollitia minus quas culpa nulla.
+                        </p>
+                    </div>
+                    <div class="info-about">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere libero nesciunt sint quaerat mollitia soluta ipsam, voluptates, similique asperiores corporis dicta perferendis quisquam inventore nemo natus perspiciatis optio ipsum? Quas!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sit sequi nesciunt quaerat distinctio labore, quasi fuga accusantium, quos ex tempora aspernatur, explicabo tempore corporis illo quas culpa nisi suscipit.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam inventore quasi, cupiditate praesentium, aliquid aspernatur voluptatibus tempora, esse error temporibus consequuntur quibusdam ducimus impedit. Obcaecati mollitia minus quas culpa nulla.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="background-contact">
+                <h1>Me mande uma <span>mensagem</span>!</h1>
+                <div class="box-contact">
+                    <input type="text" class="campo-form" placeholder="Digite seu nome" id="name">
+                    <textarea class="campo-form" placeholder="Digite sua mensagem" id="message">
+                </div>
+            </div>
+            <button>Enviar mensagem</button>
+        </section>
+    </main>
 </body>
 </html>
