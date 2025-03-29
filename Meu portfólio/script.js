@@ -48,7 +48,47 @@ function toSectionContact() {
     sidebar.style.display = "none";
 }
 
-function openWhats() {
-    const numero = "5511984393259";
-    window.open(`https://wa.me/${numero}`, "_blank");
+document.addEventListener('DOMContentLoaded', () => {
+    const btnHome = document.getElementById('btn-home');
+    const btnProjects = document.getElementById('btn-projects');
+    const btnAbout = document.getElementById('btn-about');
+    const btnContact = document.getElementById('btn-contact');
+
+    btnHome.addEventListener('click', () => {
+        btnHome.classList.add('active');
+        btnProjects.classList.remove('active');
+        btnAbout.classList.remove('active');
+        btnContact.classList.remove('active');
+    }) 
+    btnProjects.addEventListener('click', () => {
+        btnHome.classList.remove('active');
+        btnProjects.classList.add('active');
+        btnAbout.classList.remove('active');
+        btnContact.classList.remove('active');
+    }) 
+    btnAbout.addEventListener('click', () => {
+        btnHome.classList.remove('active');
+        btnProjects.classList.remove('active');
+        btnAbout.classList.add('active');
+        btnContact.classList.remove('active');
+    }) 
+    btnContact.addEventListener('click', () => {
+        btnHome.classList.remove('active');
+        btnProjects.classList.remove('active');
+        btnAbout.classList.remove('active');
+        btnContact.classList.add('active');
+    }) 
+}),
+
+function sendWhats(event) {
+    const name = document.getElementById('name').value;
+    const message = document.getElementById('message').value;
+    const number = '5511984393259';
+    
+    const text = `Olá! Me chamo ${name}. ${message}`;
+    const msgFormated = encodeURIComponent(text);
+    
+    const url = `https://whatsa.me/${number}/?t=${msgFormated}`;
+    
+    window.open(url, '_blank');
 }
