@@ -36,7 +36,7 @@ body {
     min-height: 100dvh;
     font-family: "Quicksand", sans-serif;
 }
-
+    
 .container {
     background-color: rgb(8, 8, 8,0.3);
     display: flex;
@@ -56,7 +56,7 @@ body {
 
 .container p {
     filter: var(--sat);
-    font-size: 2.3em;
+    font-size: 2em;
     font-weight: 900;
     font-family: var(--julius);
     cursor: default;
@@ -69,7 +69,7 @@ body {
 }
 
 .container nav button {
-    font-size: 1.2em;
+    font-size: 1em;
     background-color: transparent;
     border: none;
     color: #fff;
@@ -86,26 +86,6 @@ body {
 
 .container .ri-menu-line {
     display: none;
-}
-
-.animation {
-    position: relative;
-}
-
-.animation::after {
-    content: "";
-    position: absolute;
-    transition: width 0.4s ease;
-    left: 0;
-    background-color: var(--color);
-    filter: var(--sat);
-    box-shadow: var(--shadow);
-    width: 0; height: 2px;
-    margin-top: 2em;
-}
-
-.animation:hover::after {
-    width: 70%;
 }
 
 .sidebar {
@@ -153,16 +133,17 @@ main {
 #home {
     display: flex;
     align-items: center;
+    padding: 0 8%;
 }
 
 .box-introduction {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
     gap: 10em; 
     align-items: center;
+    
     margin: 20px;
-    margin-left: 13em;
-    max-width: 1150px;
+    max-width: 1100px;
 }
 
 .info-introduction { 
@@ -170,7 +151,7 @@ main {
 }
 
 .info-introduction h1 {
-    font-size: 3.3em;
+    font-size: 2.8em;
     font-family: var(--popp);
     filter: var(--sat);
     cursor: default;
@@ -183,7 +164,7 @@ main {
 }
 
 .info-introduction h3 {
-    font-size: 2em;
+    font-size: 1.6em;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -191,69 +172,10 @@ main {
     cursor: default;
 }
 
-.text-animation::before {
-    content: "";
-    animation: words 30s infinite;
-}
-
-.text-animation {
-    font-size: 1.1em;
-    font-weight: 900;
-    background: linear-gradient(100deg, cyan, rgb(117, 172, 255), rgb(0, 102, 255), rgb(122, 191, 255));
-    filter: drop-shadow(5px 2px 15px rgba(0, 255, 221, 0.6));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-
-    /* Ajustes para o efeito de digitação */
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-
-
-    /* Cursor piscando */
-    border-right: 5px solid #fff;
-    animation: cursor .8s infinite,
-                typing 3s infinite alternate;
-}
-
-@keyframes cursor {
-    50% {
-        border-color: transparent;
-    }
-}
-
-@keyframes typing {
-    0%, 10% {
-        width: 0%;
-    }
-    70%, 100% {
-        width: 100%;
-    }
-}
-
-@keyframes words {
-    0%, 20% {
-        content: "Desenvolvedor Web";
-    }
-    21%, 40% {
-        content: "Front-end Designer";
-    }
-    41%, 60% {
-        content: "UI / UX Designer";
-    }
-    61%, 80% {
-        content: "Web Designer";
-    }
-    81%, 100% {
-        content: "Dedicado ao seu sucesso!";
-    }
-}
-
 .info-introduction p {
     max-width: 700px;
     margin-bottom: 26px;
-    font-size: 1.1em;
+    font-size: .89em;
 }
 
 .info-introduction p span {
@@ -264,7 +186,7 @@ main {
 
 .info-introduction .plataformas {
     display: flex;
-    font-size: 2.3em;
+    font-size: 2em;
     gap: 20px;
 }
 
@@ -286,21 +208,21 @@ main {
     transition: all .5s linear;
 }
 
-.box-introduction button {
+.info-introduction button {
     font-family: var(--quick);
     background-color: transparent;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: var(--color-two);
-    padding: 12px;
+    padding: 10px;
     border: 1px solid var(--color-two);
     border-radius: 40px;
-    width: 200px;
+    width: 180px;
     margin-top: 25px;
     cursor: pointer;
     filter: var(--sat);
 }
 
-.box-introduction button:hover {
+.info-introduction button:hover {
     box-shadow: var(--shadow-two);
     background-color: var(--color-two);
     border: none;
@@ -315,7 +237,7 @@ main {
 
 .box-introduction button a {
     text-decoration: none;
-    color: #fff;
+    color: var(--color-two);
 }
 
 .box-introduction img {
@@ -328,36 +250,23 @@ main {
     box-shadow: var(--shadow-ft-hover);
 }
 
-@keyframes flutuar {
-    0%, 100% {    
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-30px);
-    }
-}
-
 #projects {
     margin-top: 22em;
-}
-
-.background-projects {
-    width: 100%; height: 45em;
+    width: 100%; height: auto;
     background-color: var(--bk);
     text-align: center;
 }
 
-.background-projects h1 {
-    font-size: 2.3em;
+#projects h1 {
+    font-size: 2em;
     font-family: var(--popp);
     align-items: center;
-    margin: 50px;
     padding-top: 70px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     gap: 15px;
 }
 
-.background-projects span {
+#projects span {
     color: var(--color-two);
     filter: var(--sat);
     text-shadow: var(--shadow-two);
@@ -371,21 +280,26 @@ main {
 }
 
 .box-projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
 .project {
-    width: 600px;
+    width: 550px;
     background-color: transparent;
     border: 1px solid #fff;
     border-radius: 20px;
-    height: 25em;
+    height: 22em;
+    margin-bottom: 30px;
 }
 
 .project:hover {
     transform: scale(1.1);
+}
+
+.info-project {
+    font-size: .6em;
 }
 
 #about {
@@ -398,7 +312,7 @@ main {
 
 .box-about h1 {
     font-family: var(--popp);
-    font-size: 2.3em;
+    font-size: 2em;
     gap: 15px;
 }
 
@@ -408,6 +322,10 @@ main {
     text-shadow: var(--shadow-two);
 }
 
+.box-about:hover span {
+    filter: saturate(100%);
+}
+
 .box-title-about {
     display: flex;
     align-items: center;
@@ -415,19 +333,10 @@ main {
     justify-content: center;
 }
 
-.box-title-about i {
-    color: var(--color);
-    text-shadow: var(--shadow);
-    font-size: 12em;
-    display: none;
-    animation: flutuar 3s ease-in-out infinite; ;
-}
-
 .box-info-about {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));    
-    gap: 60px;
-    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
     margin-top: 100px;
     cursor: default;
 }   
@@ -446,6 +355,7 @@ main {
 }
 
 .info-about {
+    width: 400px;
     background-color: var(--bk);
     padding: 40px;
     border-radius: 2em;
@@ -453,7 +363,7 @@ main {
 }
 
 .info-about p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #contact {
@@ -465,10 +375,8 @@ main {
 
 .form-contact {
     background-color: var(--bk);
-    width: 55em; height: 35em;
+    width: 52em; height: auto;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
     border-radius: 1.4em;
     box-shadow: 0px 0px 50px rgb(0, 221, 221);
 }
@@ -478,10 +386,9 @@ main {
 }
 
 .form-contact h1 {
-    padding-top: 30px;
-    font-size: 2.3em;
+    margin: 60px;
+    font-size: 2em;
     font-family: var(--popp);
-    margin: 15px;
 }
 
 .form-contact span {
@@ -493,14 +400,14 @@ main {
 .form-contact button {
     font-family: var(--quick);
     background-color: transparent;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: var(--color-two);
     border: 1px solid var(--color-two);
     border-radius: 40px;
-    width: 300px; height: 70px;
+    width: 280px; height: 60px;
     cursor: pointer;
     filter: var(--sat);
-    margin-left: 13.5em;
+    margin: 30px;
 }
 
 .form-contact button:hover {
@@ -512,12 +419,9 @@ main {
 }
 
 .box-contact {
-    margin: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 90%;
-    margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box-contact .campo-form {
@@ -525,30 +429,16 @@ main {
     border: 1px solid rgb(28, 28, 28);
     font-family: var(--quick);
     border-radius: 10px;
-    padding: 1rem;
+    padding: .8rem;
     outline: none;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 1em;
-    max-width: 600px;
+    
+    width: 700px;
+    /* max-width: 300px;
     max-height: 170px;
-    min-height: 30px;
-}
-
-.campo-form-two {
-    background-color: rgb(32, 32, 32);
-    max-width: 600px;
-    border: 1px solid rgb(28, 28, 28);
-    font-family: var(--quick);
-    border-radius: 10px;
-    padding-bottom: 200px;
-    padding-top: 20px;
-    padding-left: 20px;
-    outline: none;
-    color: #fff;
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    display: none;
+    min-height: 30px; */
 }
 
 .campo-form-two::placeholder {
@@ -570,179 +460,6 @@ main {
     radial-gradient(circle at 10% 20%, var(--color-two) 0%, transparent 20%),
     radial-gradient(circle at 90% 80%, var(--color-three) 0%, transparent 20%)
     var(--color-four);
-}
-
-.waves-animation {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    background: transparent;
-    z-index: -1;
-    padding-bottom: 100px;
-}
-
-.wave {
-    position: absolute;
-    width: 200%;
-    height: 100%;
-    background-repeat: repeat-x;
-    background-position: 0 bottom;
-    transform: translateY(20px);
-}
-
-.wave1 {
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(0, 95, 95)" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,181.3C672,213,768,235,864,240C960,245,1056,235,1152,192C1248,149,1344,75,1392,37.3L1440,0V320H1392C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320H0Z"></path></svg>');
-    animation: ondaMovendo 20s linear infinite;
-}
-
-.wave2 {
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(94, 255, 255)" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,218.7C384,213,480,171,576,138.7C672,107,768,85,864,80C960,75,1056,85,1152,128C1248,171,1344,245,1392,282.7L1440,320V320H1392C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320H0Z"></path></svg>');
-    opacity: 0.7;
-    animation: ondaMovendo 20s linear infinite reverse;
-}
-
-@keyframes ondaMovendo {
-    0% { background-position: 0 bottom; }
-    100% { background-position: -200% bottom; }
-}
-
-@media (max-width: 600px) {
-    #sideBar {
-        display: flex;
-    }
-    .sidebar .ri-close-large-line {
-        font-size: 2.8em;
-        color: #fff;
-    }
-    .sidebar button {
-        position: relative;
-        font-size: 1.8em;
-    }
-    .sidebar button::after {
-        content: "";
-        position: absolute;
-        transition: width 0.4s ease;
-        left: 0;
-        background-color: var(--color);
-        filter: var(--sat);
-        width: 80%; height: 2px;
-        margin-top: 2em;
-    }
-    .container {
-        height: 150px;
-    }
-    .container nav {
-        display: none;
-    }
-    .container .ri-menu-line {
-        font-size: 3.3em;
-        cursor: pointer;
-        display: block;
-    }
-    .container p {
-        font-size: 2.6em;
-    }
-    .box-introduction {
-        margin-left: 3em;
-        display: flex;
-        flex-direction: column;
-        font-size: 1.1em;
-        margin-top: 100px;
-    }
-    .info-introduction {
-        width: 550px;
-    }
-    .plataformas i {
-        font-size: 1.3em;
-    }
-    .info-introduction button {
-        width: 230px; padding: 19px;
-        font-size: 1.6em;
-    }
-    .box-introduction img {
-        width: 550px; height: 550px;
-        margin-left: 40px;
-    }
-    .background-projects {
-        height: 71em;
-        width: 700px;
-    }
-    .box-projects {
-        gap: 40px;
-    }
-    .project {
-        width: 600px; height: 400px;
-    }
-    .box-about h1 {
-        font-size: 2.6em;
-        margin-left: 120px;
-    }
-    .box-title-about {
-        gap: 7em;
-        margin-left: 16em;
-    }
-    .box-title-about i {
-        display: block;
-        filter: var(--sat);
-    }
-    .box-info-about {
-        margin-left: 120px;
-        display: flex;
-        flex-direction: column;
-    }
-    .info-about {
-        width: 400px;
-        box-shadow: -15px 10px 8px rgb(94, 255, 255);
-        border-radius: 2.4em;
-    }
-    .info-about p {
-        color: #fff;
-        font-size: 1.5em;
-    }
-    .form-contact {
-        margin-left: 320px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .form-contact h1 {
-        font-size: 1.8em;
-        padding-top: 30px;
-    }
-    .form-contact button {
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-bottom: 30px;
-    }
-    .box-contact {
-        display: flex;
-        flex-direction: column;
-        max-width: 425px;
-        margin-left: 40px;
-    }
-    .campo-form {
-        max-width: 70px;
-        max-height: 200px;
-    }
-    .campo-form-two {
-        display: block;
-        max-width: 380px;
-        max-height: 70px;
-    }
-    .campo-form-two:focus {
-        border: 1px solid var(--color-two);
-        box-shadow: var(--shadow-two);
-    }
-    .box-contact .campo-form {
-        max-width: 500px;
-    }
-    .box-contact .campo-form-two {
-        display: none;
-    }
-    .waves-animation {
-        display: none;
-    }
 }
 
 .animation.active {

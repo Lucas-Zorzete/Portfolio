@@ -1,0 +1,122 @@
+.animation {
+    position: relative;
+}
+
+.animation::after {
+    content: "";
+    position: absolute;
+    transition: width 0.4s ease;
+    left: 0;
+    background-color: var(--color);
+    filter: var(--sat);
+    box-shadow: var(--shadow);
+    width: 0; height: 2px;
+    margin-top: 2em;
+}
+
+.animation:hover::after {
+    width: 70%;
+}
+
+.text-animation::before {
+    content: "";
+    animation: words 30s infinite;
+}
+
+.text-animation {
+    font-size: 1.1em;
+    font-weight: 900;
+    background: linear-gradient(100deg, cyan, rgb(117, 172, 255), rgb(0, 102, 255), rgb(122, 191, 255));
+    filter: drop-shadow(5px 2px 15px rgba(0, 255, 221, 0.6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+    /* Ajustes para o efeito de digitação */
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+
+
+    /* Cursor piscando */
+    border-right: 5px solid #fff;
+    animation: cursor .8s infinite,
+                typing 3s infinite alternate;
+}
+
+.waves-animation {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: transparent;
+    z-index: -1;
+    padding-bottom: 100px;
+}
+
+.wave {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    transform: translateY(20px);
+}
+
+.wave1 {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(0, 95, 95)" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,181.3C672,213,768,235,864,240C960,245,1056,235,1152,192C1248,149,1344,75,1392,37.3L1440,0V320H1392C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320H0Z"></path></svg>');
+    animation: ondaMovendo 20s linear infinite;
+}
+
+.wave2 {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(94, 255, 255)" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,218.7C384,213,480,171,576,138.7C672,107,768,85,864,80C960,75,1056,85,1152,128C1248,171,1344,245,1392,282.7L1440,320V320H1392C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320H0Z"></path></svg>');
+    opacity: 0.7;
+    animation: ondaMovendo 20s linear infinite reverse;
+}
+
+@keyframes ondaMovendo {
+    0% { background-position: 0 bottom; }
+    100% { background-position: -200% bottom; }
+}
+
+@keyframes flutuar {
+    0%, 100% {    
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    0%, 10% {
+        width: 0%;
+    }
+    70%, 100% {
+        width: 100%;
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Desenvolvedor Web";
+    }
+    21%, 40% {
+        content: "Front-end Designer";
+    }
+    41%, 60% {
+        content: "UI / UX Designer";
+    }
+    61%, 80% {
+        content: "Web Designer";
+    }
+    81%, 100% {
+        content: "Dedicado ao seu sucesso!";
+    }
+}

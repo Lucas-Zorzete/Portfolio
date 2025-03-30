@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio LReis</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen">
+    <link rel="stylesheet" href="css/animations.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </head>
 <body>
@@ -78,42 +82,40 @@
                         </a>
                     </button>
                 </div>
-                <img src="img/minha-foto.jpg" alt="foto" width="600px" height="600px" style="display: block;">
+                <img src="img/minha-foto.jpg" alt="foto" width="100%" height="auto">
             </div>
         </section>
 
         <section id="projects">
-            <div class="background-projects">
-                <h1><span>Projetos </span> feitos por mim</h1>
-                <div class="box-projects">
-                    <div class="project">
-                        <img src="img/" alt="projeto 1" width="100%" height="100%">
-                        <div class="info-project">
-                            <h2>Projeto 1</h2>
-                            <div class="languages">
-                                <h3>Feito em: </h3>
-                                <span><img src="img/HTML5 logo.png" width="50px" height="50px"></span> <span><img src="img/CSS3 logo.png" width="40px" height="50px"></span> <span><img src="img/JS logo.png" width="40px" height="50px"></span>
-                            </div>
-                            <div class="btn-project">
-                                <button>Visitar site</button>
-                                <button>Visitar código</button>
-                                <button>Visitar design</button>
-                            </div>
+            <h1><span>Projetos </span> feitos por mim</h1>
+            <div class="box-projects">
+                <div class="project">
+                    <img src="img/" alt="projeto 1" width="100%" height="100%">
+                    <div class="info-project">
+                        <h2>Projeto 1</h2>
+                        <div class="languages">
+                            <h3>Feito em: </h3>
+                            <span><img src="img/HTML5 logo.png" width="40px" height="40px"></span> <span><img src="img/CSS3 logo.png" width="30px" height="40px"></span> <span><img src="img/JS logo.png" width="30px" height="40px"></span>
+                        </div>
+                        <div class="btn-project">
+                            <button>Visitar site</button>
+                            <button>Visitar código</button>
+                            <button>Visitar design</button>
                         </div>
                     </div>
-                    <div class="project">
-                        <img src="img/" alt="projeto 2" width="100%" height="100%">
-                        <div class="info-project">
-                            <h2>Projeto 2</h2>
-                            <div class="languages">
-                                <h3>Feito em: </h3>
-                                <span><img src="img/HTML5 logo.png" width="50px" height="50px"></span> <span><img src="img/CSS3 logo.png" width="40px" height="50px"></span> <span><img src="img/JS logo.png" width="40px" height="50px"></span>
-                            </div>
-                            <div class="btn-project">
-                                <button>Visitar site</button>
-                                <button>Visitar código</button>
-                                <button>Visitar design</button>
-                            </div>
+                </div>
+                <div class="project">
+                    <img src="img/" alt="projeto 2" width="100%" height="100%">
+                    <div class="info-project">
+                        <h2>Projeto 2</h2>
+                        <div class="languages">
+                            <h3>Feito em: </h3>
+                            <span><img src="img/HTML5 logo.png" width="40px" height="40px"></span> <span><img src="img/CSS3 logo.png" width="30px" height="40px"></span> <span><img src="img/JS logo.png" width="30px" height="40px"></span>
+                        </div>
+                        <div class="btn-project">
+                            <button>Visitar site</button>
+                            <button>Visitar código</button>
+                            <button>Visitar design</button>
                         </div>
                     </div>
                 </div>
@@ -124,31 +126,30 @@
             <div class="box-about">
                 <div class="box-title-about">
                     <h1>Um pouco <span>sobre mim</span></h1>
-                    <i class="ri-arrow-down-long-line"></i>
                 </div>
 
                 <div class="box-info-about">
                     <div class="info-about">
                         <p>
-                            Meu nome é Lucas Zorzete, tenho 16 anos e estou no 2° ano do Ensino Médio. Há dois anos, iniciei 
-                            meus estudos no ensino técnico da Fundação Bradesco, motivado pelo meu interesse prévio na área 
-                            de tecnologia. No entanto, ao ingressar no curso, minha paixão pelo desenvolvimento web se 
-                            intensificou ainda mais. Entre as disciplinas, a que mais me chamou atenção foi Desenvolvimento 
-                            Web, onde tivemos contato com os fundamentos das linguagens de programação em websites. 
-                            Infelizmente, eu não estava de acordo com as técnicas de ensino que a professora usava para 
+                            Meu nome é <span style="color: rgb(127, 240, 255);">Lucas Zorzete</span>, tenho <span style="color: rgb(127, 240, 255);">16 anos</span> e estou no 2° ano do Ensino Médio. Há dois anos, iniciei 
+                            meus estudos no <span style="color: rgb(127, 240, 255);">ensino técnico da Fundação Bradesco</span>, motivado pelo meu interesse prévio na área 
+                            de tecnologia. No entanto, ao ingressar no curso, minha <span style="color: rgb(127, 240, 255);">paixão pela área da programação</span> se 
+                            intensificou ainda mais. Entre as disciplinas, a que mais me chamou atenção foi <span style="color: rgb(127, 240, 255);">Desenvolvimento 
+                            Web</span>, onde tivemos contato com os fundamentos das linguagens de programação em <span style="color: rgb(127, 240, 255);">websites</span>. 
+                            Infelizmente, eu não estava de acordo com as técnicas de ensino que a professora utilizava para 
                             os alunos, já que era tardia e má eficiente para o nosso aprendizado.
                         </p>
                     </div>
                     <div class="info-about">
                         <p>
-                            Diante disso, tomei a iniciativa de estudar por conta própria. Durante as férias do final de
-                            2024, passei dias e noites me dedicando intensamente ao aprendizado e à prática de HTML5, 
-                            CSS3 e JavaScript. Esse esforço contínuo me permitiu não apenas superar a deficiência do ensino,
-                            mas também me destacar como o melhor aluno de front-end da minha turma, composta por 40 estudantes.
-                            Meu objetivo é não apenas desenvolver interfaces visuais atraentes, mas também garantir uma 
-                            experiência eficiente para os usuários. Estou constantemente estudando novas tecnologias e 
-                            aperfeiçoando minhas técnicas para entregar soluções inovadoras no mercado e, principalmente, 
-                            para os serviços dos meus clientes.
+                            Diante disso, tomei a iniciativa de <span style="color: rgb(127, 240, 255);">estudar por conta própria</span>. Durante as férias do final de
+                            2024, passei <span style="color: rgb(127, 240, 255);">dias e noites me dedicando</span> intensamente ao aprendizado e à prática de <span style="color: rgb(253, 214, 129);">HTML5</span>, 
+                            <span style="color: rgb(159, 255, 226);">CSS3</span> e <span style="color: rgb(253, 255, 127);">JavaScript</span>. Esse esforço contínuo me permitiu não apenas superar a deficiência do ensino,
+                            mas também me destacar como o <span style="color: rgb(127, 240, 255);">melhor aluno de front-end da minha turma</span>, composta por <span style="color: rgb(127, 240, 255);">40 estudantes</span>.
+                            Meu objetivo é não apenas desenvolver interfaces visuais atraentes, mas também <span style="color: rgb(127, 240, 255);">garantir uma 
+                            experiência eficiente para os usuários</span>. Estou constantemente estudando novas tecnologias e 
+                            aperfeiçoando minhas técnicas para <span style="color: rgb(127, 240, 255);">entregar soluções inovadoras no mercado</span> e, principalmente, 
+                            para os <span style="color: rgb(127, 240, 255);">serviços dos meus clientes</span>.
                         </p>
                     </div>
                 </div>
@@ -161,12 +162,12 @@
                 <div class="box-contact">
                     <input type="text" class="campo-form" placeholder="Digite seu nome" id="name">
                     <textarea class="campo-form" placeholder="Digite sua mensagem" rows="8" id="message"></textarea>
-                    <textarea class="campo-form-two" placeholder="Digite sua mensagem" id="message"></textarea>
+                    
+                    <button type="submit" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <i class="ri-whatsapp-line" style="font-size: 1.2em;"></i> 
+                        Enviar mensagem
+                    </button>
                 </div>
-                <button type="submit" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-                    <i class="ri-whatsapp-line" style="font-size: 1.2em;"></i> 
-                    Enviar mensagem
-                </button>
             </form>
         </section>
         

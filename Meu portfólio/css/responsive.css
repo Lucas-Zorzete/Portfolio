@@ -1,0 +1,211 @@
+@media screen and (max-width: 700px) {
+    #sideBar {
+        display: flex;
+        width: 220px;
+    }
+    .sidebar .ri-close-large-line {
+        font-size: 1.6em;
+        color: #fff;
+    }
+    .sidebar button {
+        position: relative;
+        font-size: 1.1em;
+    }
+    .sidebar button::after {
+        content: "";
+        position: absolute;
+        transition: width 0.4s ease;
+        left: 0;
+        background-color: var(--color);
+        filter: var(--sat);
+        width: 80%; height: 2px;
+        margin-top: 2em;
+    }
+    .container {
+        height: 110px;
+    }
+    .container nav {
+        display: none;
+    }
+    .container .ri-menu-line {
+        font-size: 2.5em;
+        cursor: pointer;
+        display: block;
+    }
+    .container p {
+        font-size: 2em;
+    }
+    
+    .box-introduction {
+        font-size: 1.1em;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-introduction {
+        max-width: 400px;
+    }
+    .box-introduction img {
+        width: 90%;
+    }
+    #projects h1 {
+        font-size: 2em;
+    }
+    .form-contact {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: .8em;
+        width: 40em; height: auto;
+    }
+    .form-contact h1 {
+        font-size: 2em;
+        margin: 40px;
+    }
+    .form-contact button {
+        width: 250px;
+        margin-top: 30px;
+        font-size: 1.3em;
+    }
+    .box-contact .campo-form {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .box-introduction img {
+      width: 90%;
+    }
+    .plataformas {
+        display: flex;
+    }
+    .box-introduction {
+        font-size: 1.1em;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-introduction {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    #home {
+        padding: 0 15%;
+    }
+}
+
+@media (max-width: 1190px) {
+    .project {
+        width: 300px; height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .project {
+        width: 500px; height: 300px;
+    }
+    .box-projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 589px) {
+    .project {
+        width: 400px; height: 300px;
+    }
+}
+
+@media (max-width: 735px) {
+    .box-info-about {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+@media (max-width: 523px) {
+    .info-about {
+        width: auto;
+    }
+    .info-introduction {
+        max-width: 350px;
+        font-size: .9em;
+    }
+    #home {
+        padding: 0 1%;
+        
+    }
+}
+
+@media (max-width: 820px) {
+    .form-contact {
+        width: 40em;
+    }
+    .box-contact .campo-form {
+        width: 400px;
+    }
+}
+
+@media (max-width: 620px) {
+    .box-contact .campo-form {
+        width: 350px;
+    }
+    .project {
+        width: 350px;
+    }
+}
+
+/* CELULAR */
+/* @media (max-width: 620px) {
+    
+    
+    .info-introduction {
+        width: 550px;
+    }
+    .plataformas i {
+        font-size: 1.3em;
+    }
+    .info-introduction button {
+        width: 230px; padding: 19px;
+        font-size: 1.6em;
+    }
+    
+    .background-projects {
+        height: 71em;
+        width: 700px;
+    }
+    .box-projects {
+        gap: 40px;
+    }
+    
+    .box-about h1 {
+        font-size: 2.6em;
+        margin-left: 120px;
+    }
+    .box-title-about {
+        gap: 7em;
+        margin-left: 10em;
+    }
+    .box-title-about i {
+        display: block;
+        filter: var(--sat);
+    }
+    .box-info-about {
+        margin-left: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-about {
+        width: 400px;
+        box-shadow: -15px 10px 8px rgb(94, 255, 255);
+        border-radius: 2.4em;
+    }
+    .info-about p {
+        color: #fff;
+        font-size: 1.5em;
+    }
+    
+    .waves-animation {
+        display: none;
+    }
+} */

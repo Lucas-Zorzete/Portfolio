@@ -83,12 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
 function sendWhats(event) {
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
-    const number = '5511984393259';
     
     const text = `Olá! Me chamo ${name}. ${message}`;
     const msgFormated = encodeURIComponent(text);
     
-    const url = `https://whatsa.me/${number}/?t=${msgFormated}`;
+    const url = `https://whatsa.me/5511984393259/?t=${msgFormated}`;
     
     window.open(url, '_blank');
 }
