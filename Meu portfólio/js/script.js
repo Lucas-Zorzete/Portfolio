@@ -81,13 +81,21 @@ document.addEventListener('DOMContentLoaded', () => {
 }),
 
 function sendWhats(event) {
-    const name = document.getElementById('name').value;
-    const message = document.getElementById('message').value;
+    event.preventDefault(); // Impede o formulário de recarregar a página
     
+    const name = document.getElementById('name').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !message) {
+        alert("Por favor, preencha todos os campos!");
+        return;
+    }
+
     const text = `Olá! Me chamo ${name}. ${message}`;
     const msgFormated = encodeURIComponent(text);
-    
-    const url = `https://whatsa.me/5511984393259/?t=${msgFormated}`;
-    
+    const phone = "5511984393259"; // Número do WhatsApp
+
+    const url = `https://wa.me/${phone}?text=${msgFormated}`;
+
     window.open(url, '_blank');
 }
