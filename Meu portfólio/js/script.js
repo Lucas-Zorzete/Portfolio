@@ -1,3 +1,15 @@
+function openFigma() {
+    location.href = "https://www.figma.com/design/bSymaICFc5vmKcMGep0DO9/Modelo-ApartBrain?node-id=0-1&t=9HLFRTLlCdQIT7X3-1";
+}
+
+function openCode() {
+    location.href = "https://github.com/Lucas-Zorzete/Projetos/tree/main/ApartBrain";
+}
+
+function openSite() {
+    location.href = "https://guileless-rugelach-bda4ac.netlify.app/"
+}
+
 function closeSidebar() {
     const sidebar = document.getElementById('sideBar');
     sidebar.style.display = "none";
@@ -78,24 +90,4 @@ document.addEventListener('DOMContentLoaded', () => {
         btnAbout.classList.remove('active');
         btnContact.classList.add('active');
     }) 
-}),
-
-function sendWhats(event) {
-    event.preventDefault(); // Impede o formulário de recarregar a página
-    
-    const name = document.getElementById('name').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    if (!name || !message) {
-        alert("Por favor, preencha todos os campos!");
-        return;
-    }
-
-    const text = `Olá! Me chamo ${name}. ${message}`;
-    const msgFormated = encodeURIComponent(text);
-    const phone = "5511984393259"; // Número do WhatsApp
-
-    const url = `https://wa.me/${phone}?text=${msgFormated}`;
-
-    window.open(url, '_blank');
-}
+})

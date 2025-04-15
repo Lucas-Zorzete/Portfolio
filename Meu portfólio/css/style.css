@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:wght@400;700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:wght@400;900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --quick: "Quicksand", sans-serif;
     --popp: "Poppins", sans-serif;
     --julius: "Julius Sans One", sans-serif;
+    --raleway: "Raleway", sans-serif;
 
     --shadow: 0px 0px 40px rgb(121, 201, 255);
     --shadow-two: 0px 0px 40px rgb(0, 65, 71);
@@ -24,9 +26,9 @@
 }
 
 * {
+    transition: .2s linear;
     padding: 0;
     margin: 0;
-    transition: .2s linear;
 }
 
 body {
@@ -141,7 +143,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
     gap: 10em; 
     align-items: center;
-    
+   
     margin: 20px;
     max-width: 1100px;
 }
@@ -204,8 +206,8 @@ main {
     box-shadow: var(--shadow-two);
     color: #000000;
     background-color: var(--color-two);
-    border: none;
-    transition: all .5s linear;
+    border: 1px solid var(--color-two);
+    transition: all .3s linear;
 }
 
 .info-introduction button {
@@ -225,7 +227,7 @@ main {
 .info-introduction button:hover {
     box-shadow: var(--shadow-two);
     background-color: var(--color-two);
-    border: none;
+    border: 1px solid var(--color-two);
     transition: .3s linear;
     font-weight: 600;
 }
@@ -240,13 +242,24 @@ main {
     color: var(--color-two);
 }
 
-.box-introduction img {
+.box-introduction .skills {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.skills img {
+    animation: flutuar 6s ease-in-out infinite;
+    opacity: 70%;
+}
+
+.box-introduction .photo {
     border-radius: 100%;
     box-shadow: var(--shadow-ft), var(--shadow2-ft);
     animation: flutuar 3s ease-in-out infinite; 
 }
 
-.box-introduction img:hover {
+.box-introduction .photo:hover {
     box-shadow: var(--shadow-ft-hover);
 }
 
@@ -256,6 +269,7 @@ main {
     background-color: var(--bk);
     text-align: center;
 }
+
 
 #projects h1 {
     font-size: 2em;
@@ -272,34 +286,101 @@ main {
     text-shadow: var(--shadow-two);
 }
 
-.languages {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
 .box-projects {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    width: 100%;
+    place-items: center;
+}
+
+.project.mading {
+    background-color: #000000;
+    pointer-events: none;
 }
 
 .project {
-    width: 550px;
+    width: 100%;
     background-color: transparent;
-    border: 1px solid #fff;
     border-radius: 20px;
     height: 22em;
-    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
 }
 
 .project:hover {
-    transform: scale(1.1);
+    transition: 600ms;
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 20px rgba(99, 232, 255, 0.15);
+}
+
+.project img {
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.project:hover img {
+    transition: 600ms;
+    transform: scale(1.08);
 }
 
 .info-project {
+    font-family: var(--raleway);
+    width: 100%; height: 110px;
+    box-shadow: 0 0 10px black;
+    border-radius: 0 0 18px 18px;
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 15px;
     font-size: .6em;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.info-project h2 {
+    font-size: 2.7em;
+}
+
+.info-project .btn-project {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;   
+}
+
+.btn-project button {
+    font-weight: 600;
+    font-size: 1.5em;
+    font-family: var(--quick);
+    padding: .5rem;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.7);
+} 
+
+.btn-project button:hover {
+    background-color: var(--color-two);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.faixa {
+    position: absolute;
+    bottom: 70%;
+    left: -50%;
+    width: 150%;
+    text-align: center;
+    background: rgb(255, 251, 32);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transform: rotate(-30deg);
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 5px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 #about {
@@ -329,7 +410,7 @@ main {
 .box-title-about {
     display: flex;
     align-items: center;
-    gap: 10em;
+
     justify-content: center;
 }
 
@@ -354,7 +435,7 @@ main {
     border-radius: 2.4em;
 }
 
-.info-about {
+.info-about {   
     width: 400px;
     background-color: var(--bk);
     padding: 40px;
@@ -423,7 +504,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
-
+    
 .box-contact .campo-form {
     background-color: rgb(32, 32, 32);
     border: 1px solid rgb(28, 28, 28);
@@ -434,7 +515,8 @@ main {
     color: #fff;
     font-size: 1em;
     margin-bottom: 1em;
-    
+    resize: none;
+
     width: 700px;
     /* max-width: 300px;
     max-height: 170px;
