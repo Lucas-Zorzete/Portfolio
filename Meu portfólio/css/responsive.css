@@ -41,7 +41,7 @@
         flex-direction: column;
     }
     .info-introduction {
-        max-width: 400px;
+        text-align: center;
     }
     .box-introduction img {
         width: 90%;
