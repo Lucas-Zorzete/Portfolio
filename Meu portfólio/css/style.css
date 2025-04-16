@@ -264,8 +264,8 @@ main {
     width: 100%; height: auto;
     background-color: var(--bk);
     text-align: center;
+    padding-bottom: 30px;
 }
-
 
 #projects h1 {
     font-size: 2em;
