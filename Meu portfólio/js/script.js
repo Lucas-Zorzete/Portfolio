@@ -7,7 +7,7 @@ function openCode() {
 }
 
 function openSite() {
-    location.href = "https://guileless-rugelach-bda4ac.netlify.app/"
+    location.href = "https://sparkly-youtiao-0e0b0b.netlify.app/"
 }
 
 function closeSidebar() {
