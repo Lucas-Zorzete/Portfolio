@@ -292,6 +292,7 @@ main {
 .project.mading {
     background-color: #000000;
     pointer-events: none;
+    box-shadow: 0px 0px 10px rgb(87, 87, 87);
 }
 
 .project {
