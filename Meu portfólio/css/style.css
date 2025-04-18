@@ -274,6 +274,7 @@ main {
     padding-top: 70px;
     padding-bottom: 60px;
     gap: 15px;
+    margin: 10px;
 }
 
 #projects span {
@@ -407,8 +408,8 @@ main {
 .box-title-about {
     display: flex;
     align-items: center;
-
     justify-content: center;
+    margin: 10px;
 }
 
 .box-info-about {
