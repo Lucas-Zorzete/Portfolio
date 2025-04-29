@@ -7,7 +7,7 @@ function openCode() {
 }
 
 function openSite() {
-    location.href = "https://sparkly-youtiao-0e0b0b.netlify.app/"
+    location.href = "https://coruscating-shortbread-da0110.netlify.app/"
 }
 
 function closeSidebar() {
