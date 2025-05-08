@@ -62,7 +62,7 @@
     .form-contact button {
         width: 250px;
         margin-top: 30px;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
     .box-contact {
         .campo-form {
@@ -107,8 +107,9 @@
 @media (max-width: 1190px) {
     .info-project h2 {
         font-size: 2.3em;
-        margin-top: 20px;
+        margin: 10px;
     }
+}
 
 @media (max-width: 600px) {
     .box-projects {

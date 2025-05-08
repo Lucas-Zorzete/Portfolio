@@ -267,12 +267,15 @@ main {
     padding-bottom: 30px;
 }
 
+.title-projects {
+    padding-bottom: 60px;
+}
+
 #projects h1 {
     font-size: 2em;
     font-family: var(--popp);
     align-items: center;
     padding-top: 70px;
-    padding-bottom: 60px;
     gap: 15px;
     margin: 10px;
 }
@@ -313,6 +316,7 @@ main {
 }
 
 .project img {
+    object-position: center;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -345,7 +349,7 @@ main {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;   
+    margin: 15px;
 }
 
 .btn-project button {
@@ -363,6 +367,11 @@ main {
     background-color: var(--color-two);
     border-radius: 10px;
     transform: scale(1.1);
+}
+
+.btn-project a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .faixa {

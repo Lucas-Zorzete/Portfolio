@@ -1,15 +1,3 @@
-function openFigma() {
-    location.href = "https://www.figma.com/design/bSymaICFc5vmKcMGep0DO9/Modelo-ApartBrain?node-id=0-1&t=9HLFRTLlCdQIT7X3-1";
-}
-
-function openCode() {
-    location.href = "https://github.com/Lucas-Zorzete/Projetos/tree/main/ApartBrain";
-}
-
-function openSite() {
-    location.href = "https://coruscating-shortbread-da0110.netlify.app/"
-}
-
 function closeSidebar() {
     const sidebar = document.getElementById('sideBar');
     sidebar.style.display = "none";
