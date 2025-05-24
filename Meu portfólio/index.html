@@ -11,18 +11,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
-    <link rel="website icon" href="img/logo.png">
-    
+    <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 
-<script src="js/script.js"></script>
-<script src="js/whats.js"></script>
-
 <body>
-    <header>
+    <header> 
         <div class="particulas"></div>
         <div class="container">
-            <p alt="logo">LZ<span>Reis</span></p>
+            <p id="logo">LZ<span>Reis</span></p>
             <nav>
                 <button id="btn-home" class="animation active" onclick="toSectionHome()">
                     <i class="ri-home-4-line"></i>
@@ -35,40 +31,43 @@
                 <button id="btn-about" class="animation" onclick="toSectionAbout()">
                     <i class="ri-chat-smile-2-line"></i>
                     Sobre mim
+                </button>
                 <button id="btn-contact" class="animation" onclick="toSectionContact()">
                     <i class="ri-user-line"></i>
                     Contato
                 </button>
-            </nav>
-            <i class="ri-menu-line" onclick="openSidebar()"></i>
-        </div>
-        <nav class="sidebar" id="sideBar">
-            <i class="ri-close-large-line" onclick="closeSidebar()"></i>
-            <button class="animation" id="close" onclick="toSectionHome()">
-                <i class="ri-home-4-line"></i>
-                Home
-            </button>
-            <button class="animation" onclick="toSectionProj()">
-                <i class="ri-briefcase-line"></i>
-                Projetos
-            </button>
-            <button class="animation" onclick="toSectionAbout()">
-                <i class="ri-chat-smile-2-line"></i>
-                Sobre mim
-            <button class="animation" onclick="toSectionContact()">
-                <i class="ri-user-line"></i>
-                Contato
-            </button>
-        </nav>
-    </header>
+                </nav>
+                <i class="ri-menu-line" onclick="openSidebar()"></i>
+            </div>
 
+            <nav class="sidebar" id="sideBar">
+                <i class="ri-close-large-line" onclick="closeSidebar()"></i>
+                <button class="animation" id="close" onclick="toSectionHome()">
+                    <i class="ri-home-4-line"></i>
+                    Home
+                </button>
+                <button class="animation" onclick="toSectionProj()">
+                    <i class="ri-briefcase-line"></i>
+                    Projetos
+                </button>
+                <button class="animation" onclick="toSectionAbout()">
+                    <i class="ri-chat-smile-2-line"></i>
+                    Sobre mim
+                </button>
+                <button class="animation" onclick="toSectionContact()">
+                    <i class="ri-user-line"></i>
+                    Contato
+                </button>
+            </nav>
+    </header>
+    
     <main>
         <section id="home">
             <div class="box-introduction">
                 <div class="info-introduction">
-                    <h1>Olá! Este é <span>Lucas</span></h1>
-                    <h3>Eu sou <span class="text-animation"></span></h3>
-                    <p>
+                    <h1 id="info-introduction-title">Olá! Este é <span>Lucas</span></h1>
+                    <h3 id="info-introduction-subtitle">Eu sou <span class="text-animation"></span></h3>
+                    <p id="info-introduction-text">
                         Desenvolvo experiências digitais chamativas e funcionais! Transformo conceitos em interfaces 
                         <span>modernas</span>, <span>responsivas</span> e <span>intuitivas</span>. Meu trabalho une criatividade e tecnologia para criar sites 
                         estáticos, eficientes e visualmente impactantes. Cada detalhe é pensado para proporcionar a melhor
@@ -80,23 +79,23 @@
                         <i class="ri-instagram-line" onclick="openInsta()"></i>
                         <i class="ri-github-fill" onclick="openGit()"></i>
                     </div>
-                    <button>
+                    <button id="whatsBtn">
                         <a href="https://whatsa.me/5511984393259">
                             <i class="ri-whatsapp-line"></i> 
                             Contato
                         </a>
                     </button>
                     <div class="skills">
-                        <img src="img/HTML5 logo.png" width="60px" height="70px">
-                        <img src="img/CSS3 logo.png" width="60px" height="70px">
-                        <img src="img/JS logo.png" width="60px" height="70px">
-                        <img src="img/Figma-logo.svg.png" width="50px" height="70px">
+                        <img id="html" src="img/HTML5 logo.png" width="60px" height="70px">
+                        <img id="css" src="img/CSS3 logo.png" width="60px" height="70px">
+                        <img id="javascript" src="img/JS logo.png" width="60px" height="70px">
+                        <img id="figma" src="img/Figma-logo.svg.png" width="50px" height="70px">
                     </div>
                 </div>
                 <img class="photo" src="img/minha-foto.png" alt="foto" width="100%" height="auto">
             </div>
         </section>
-
+        
         <section id="projects">
             <div class="title-projects">
                 <h1><span>Projetos </span> feitos por mim</h1>
@@ -183,8 +182,8 @@
                             meus estudos no <span style="color: rgb(127, 240, 255);">ensino técnico da Fundação Bradesco</span>, motivado pelo meu interesse prévio na área 
                             de tecnologia. No entanto, ao ingressar no curso, minha <span style="color: rgb(127, 240, 255);">paixão pela área da programação</span> se 
                             intensificou ainda mais. Entre as disciplinas, a que mais me chamou atenção foi <span style="color: rgb(127, 240, 255);">Desenvolvimento 
-                            Web</span>, onde tivemos contato com os fundamentos das linguagens de programação em <span style="color: rgb(127, 240, 255);">websites</span>. 
-                            Infelizmente, eu não estava de acordo com as técnicas de ensino que a professora utilizava para 
+                                Web</span>, onde tivemos contato com os fundamentos das linguagens de programação em <span style="color: rgb(127, 240, 255);">websites</span>. 
+                                Infelizmente, eu não estava de acordo com as técnicas de ensino que a professora utilizava para 
                             os alunos, já que era tardia e má eficiente para o nosso aprendizado.
                         </p>
                     </div>
@@ -195,7 +194,7 @@
                             <span style="color: rgb(159, 255, 226);">CSS3</span> e <span style="color: rgb(253, 255, 127);">JavaScript</span>. Esse esforço contínuo me permitiu não apenas superar a deficiência do ensino,
                             mas também me destacar como o <span style="color: rgb(127, 240, 255);">melhor aluno de front-end da minha turma</span>, composta por <span style="color: rgb(127, 240, 255);">40 estudantes</span>.
                             Meu objetivo é não apenas desenvolver interfaces visuais atraentes, mas também <span style="color: rgb(127, 240, 255);">garantir uma 
-                            experiência eficiente para os usuários</span>. Estou constantemente estudando novas tecnologias e 
+                                experiência eficiente para os usuários</span>. Estou constantemente estudando novas tecnologias e 
                             aperfeiçoando minhas técnicas para <span style="color: rgb(127, 240, 255);">entregar soluções inovadoras no mercado</span> e, principalmente, 
                             para os <span style="color: rgb(127, 240, 255);">serviços dos meus clientes</span>.
                         </p>
@@ -223,7 +222,10 @@
             <div class="wave wave1"></div>
             <div class="wave wave2"></div>
         </div>
-
+        
     </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/whats.js"></script>
 </body>
 </html>
