@@ -14,13 +14,13 @@
 
     --shadow-ft: 0px 0px 40px rgb(121, 201, 255,0.6);
     --shadow2-ft: 0px 0px 40px rgb(0, 65, 71, 0.6);
-    --shadow-ft-hover: 0px 0px 50px rgb(118, 234, 255);
+    --shadow-ft-hover: 0px 0px 70px rgb(94, 190, 207);
 
     --color: rgb(118, 234, 255);
     --color-two: rgb(85, 235, 255);
     --color-three: rgb(0, 97, 105);
     --color-four: rgba(0,0,0);
-    --bk: rgb(29, 29, 29,0.5);
+    --bk: rgba(29, 29, 29,0.5);
 
     --sat: saturate(900%);
 }
@@ -135,17 +135,15 @@ main {
 #home {
     display: flex;
     align-items: center;
-    padding: 0 8%;
+    justify-content: center;
 }
 
 .box-introduction {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
-    gap: 10em; 
+    gap: 7em; 
     align-items: center;
-   
-    margin: 20px;
-    max-width: 1100px;
+    max-width: 80%;
 }
 
 .info-introduction h1 {
@@ -249,16 +247,6 @@ main {
     opacity: 70%;
 }
 
-.box-introduction .photo {
-    border-radius: 100%;
-    box-shadow: var(--shadow-ft), var(--shadow2-ft);
-    animation: flutuar 3s ease-in-out infinite; 
-}
-
-.box-introduction .photo:hover {
-    box-shadow: var(--shadow-ft-hover);
-}
-
 #projects {
     margin-top: 22em;
     width: 100%; height: auto;
@@ -269,6 +257,7 @@ main {
 
 .title-projects {
     padding-bottom: 60px;
+    margin: 20px;
 }
 
 #projects h1 {
@@ -423,7 +412,8 @@ main {
 
 .box-info-about {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 8em;
     padding: 0 8%;
     margin-top: 100px;
     cursor: default;
@@ -437,9 +427,25 @@ main {
     color: #fff;
 }
 
+.info-about:hover p span {
+    color: rgb(127, 240, 255);
+}
+
+.info-about:hover p #html {
+    color: rgb(255, 200, 127);
+}
+.info-about:hover p #css {
+    color: rgb(127, 255, 185);
+}
+.info-about:hover p #js {
+    color: rgb(246, 255, 127);
+}
+
 .info-about:hover {
-    box-shadow: -15px 10px 8px rgb(94, 255, 255);
+    box-shadow: -15px 10px 30px rgb(65, 165, 165);
     border-radius: 2.4em;
+    padding-right: 20px;
+    transition: 1s;
 }
 
 .info-about {   
@@ -537,18 +543,6 @@ main {
 .box-contact .campo-form:focus {
     border: 1px solid var(--color-two);
     box-shadow: var(--shadow-two);
-}
-
-.particulas {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    z-index: -1;
-    opacity: .3;
-    background: 
-    radial-gradient(circle at 10% 20%, var(--color-two) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, var(--color-three) 0%, transparent 20%)
-    var(--color-four);
 }
 
 .animation.active {

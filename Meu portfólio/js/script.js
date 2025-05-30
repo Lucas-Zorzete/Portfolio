@@ -79,3 +79,18 @@ document.addEventListener('DOMContentLoaded', () => {
         btnContact.classList.add('active');
     }) 
 })
+
+if (navigator.userAgent.includes("Instagram")) {
+  alert("Clique nos três pontos acima e selecione 'Abrir no navegador' para melhor experiência.");
+}
+
+const spotlight = document.getElementById('spotlight');
+document.addEventListener('mousemove', (e) => {
+    spotlight.style.left = e.clientX + 'px';
+    spotlight.style.top = e.clientY + 'px';
+});
+
+const inputTheme = document.getElementById('inputTheme');
+inputTheme.addEventListener('click', function() {
+    document.body.classList.toggle('lightTheme');
+}); 

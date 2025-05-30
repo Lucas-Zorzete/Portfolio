@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css" media="screen">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/lightTheme.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
@@ -15,6 +16,7 @@
 </head>
 
 <body>
+    <div class="spotlight" id="spotlight"></div>
     <header> 
         <div class="particulas"></div>
         <div class="container">
@@ -36,29 +38,33 @@
                     <i class="ri-user-line"></i>
                     Contato
                 </button>
-                </nav>
-                <i class="ri-menu-line" onclick="openSidebar()"></i>
-            </div>
-
-            <nav class="sidebar" id="sideBar">
-                <i class="ri-close-large-line" onclick="closeSidebar()"></i>
-                <button class="animation" id="close" onclick="toSectionHome()">
-                    <i class="ri-home-4-line"></i>
-                    Home
-                </button>
-                <button class="animation" onclick="toSectionProj()">
-                    <i class="ri-briefcase-line"></i>
-                    Projetos
-                </button>
-                <button class="animation" onclick="toSectionAbout()">
-                    <i class="ri-chat-smile-2-line"></i>
-                    Sobre mim
-                </button>
-                <button class="animation" onclick="toSectionContact()">
-                    <i class="ri-user-line"></i>
-                    Contato
-                </button>
             </nav>
+            <label class="switch">
+                <input type="checkbox" id="inputTheme">
+                <span class="slider"></span>
+            </label>
+            <i class="ri-menu-line" onclick="openSidebar()"></i>
+        </div>
+
+        <nav class="sidebar" id="sideBar">
+            <i class="ri-close-large-line" onclick="closeSidebar()"></i>
+            <button class="animation" id="close" onclick="toSectionHome()">
+                <i class="ri-home-4-line"></i>
+                Home
+            </button>
+            <button class="animation" onclick="toSectionProj()">
+                <i class="ri-briefcase-line"></i>
+                Projetos
+            </button>
+            <button class="animation" onclick="toSectionAbout()">
+                <i class="ri-chat-smile-2-line"></i>
+                Sobre mim
+            </button>
+            <button class="animation" onclick="toSectionContact()">
+                <i class="ri-user-line"></i>
+                Contato
+            </button>
+        </nav>
     </header>
     
     <main>
@@ -154,7 +160,7 @@
                 <div class="project">
                     <img src="img/proj 3.png" alt="projeto 1" width="100%" height="100%">
                     <div class="info-project">
-                        <h2>Suplementos de Academia</h2>
+                        <h2>Loja de Suplementos</h2>
 
                         <div class="btn-project">
                             <button>
@@ -163,7 +169,7 @@
                             </a>
                         </button>
                         <button>
-                            <a href="https://scintillating-gaufre-be68d5.netlify.app/">
+                            <a href="https://gregarious-halva-15fd34.netlify.app/">
                                 Visitar o site
                             </a>
                         </button>
@@ -186,25 +192,25 @@
                 <div class="box-info-about">
                     <div class="info-about">
                         <p>
-                            Meu nome é <span style="color: rgb(127, 240, 255);">Lucas Zorzete</span>, tenho <span style="color: rgb(127, 240, 255);">16 anos</span> e estou no 2° ano do Ensino Médio. Há dois anos, iniciei 
-                            meus estudos no <span style="color: rgb(127, 240, 255);">ensino técnico da Fundação Bradesco</span>, motivado pelo meu interesse prévio na área 
-                            de tecnologia. No entanto, ao ingressar no curso, minha <span style="color: rgb(127, 240, 255);">paixão pela área da programação</span> se 
-                            intensificou ainda mais. Entre as disciplinas, a que mais me chamou atenção foi <span style="color: rgb(127, 240, 255);">Desenvolvimento 
-                                Web</span>, onde tivemos contato com os fundamentos das linguagens de programação em <span style="color: rgb(127, 240, 255);">websites</span>. 
+                            Meu nome é <span>Lucas Zorzete</span>, tenho <span>16 anos</span> e estou no 2° ano do Ensino Médio. Há dois anos, iniciei 
+                            meus estudos no <span>ensino técnico da Fundação Bradesco</span>, motivado pelo meu interesse prévio na área 
+                            de tecnologia. No entanto, ao ingressar no curso, minha <span>paixão pela área da programação</span> se 
+                            intensificou ainda mais. Entre as disciplinas, a que mais me chamou atenção foi <span>Desenvolvimento 
+                                Web</span>, onde tivemos contato com os fundamentos das linguagens de programação em <span>websites</span>. 
                                 Infelizmente, eu não estava de acordo com as técnicas de ensino que a professora utilizava para 
                             os alunos, já que era tardia e má eficiente para o nosso aprendizado.
                         </p>
                     </div>
                     <div class="info-about">
                         <p>
-                            Diante disso, tomei a iniciativa de <span style="color: rgb(127, 240, 255);">estudar por conta própria</span>. Durante as férias do final de
-                            2024, passei <span style="color: rgb(127, 240, 255);">dias e noites me dedicando</span> intensamente ao aprendizado e à prática de <span style="color: rgb(253, 214, 129);">HTML5</span>, 
-                            <span style="color: rgb(159, 255, 226);">CSS3</span> e <span style="color: rgb(253, 255, 127);">JavaScript</span>. Esse esforço contínuo me permitiu não apenas superar a deficiência do ensino,
-                            mas também me destacar como o <span style="color: rgb(127, 240, 255);">melhor aluno de front-end da minha turma</span>, composta por <span style="color: rgb(127, 240, 255);">40 estudantes</span>.
-                            Meu objetivo é não apenas desenvolver interfaces visuais atraentes, mas também <span style="color: rgb(127, 240, 255);">garantir uma 
+                            Diante disso, tomei a iniciativa de <span>estudar por conta própria</span>. Durante as férias do final de
+                            2024, passei <span>dias e noites me dedicando</span> intensamente ao aprendizado e à prática de <span id="html">HTML5</span>, 
+                            <span id="css">CSS3</span> e <span id="js">JavaScript</span>. Esse esforço contínuo me permitiu não apenas superar a deficiência do ensino,
+                            mas também me destacar como o <span>melhor aluno de front-end da minha turma</span>, composta por <span>40 estudantes</span>.
+                            Meu objetivo é não apenas desenvolver interfaces visuais atraentes, mas também <span>garantir uma 
                                 experiência eficiente para os usuários</span>. Estou constantemente estudando novas tecnologias e 
-                            aperfeiçoando minhas técnicas para <span style="color: rgb(127, 240, 255);">entregar soluções inovadoras no mercado</span> e, principalmente, 
-                            para os <span style="color: rgb(127, 240, 255);">serviços dos meus clientes</span>.
+                            aperfeiçoando minhas técnicas para <span>entregar soluções inovadoras no mercado</span> e, principalmente, 
+                            para os <span>serviços dos meus clientes</span>.
                         </p>
                     </div>
                 </div>

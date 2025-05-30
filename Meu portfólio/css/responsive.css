@@ -93,14 +93,20 @@
     #home {
         padding: 0 15%;
     }
+    .spotlight {
+        display: none;
+    }
 }
 
 @media (max-width: 950px) {
     .box-projects {
         flex-direction: column;
+        .project {
+            width: 90%;
+        }
         .project:hover {
             transform: none;
-        }
+        }        
     }
 }
 
