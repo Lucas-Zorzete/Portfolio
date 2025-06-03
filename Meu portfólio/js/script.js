@@ -16,6 +16,10 @@ function openGit() {
     window.location.href = "https://github.com/Lucas-Zorzete";
 }
 
+function openLinkedin() {
+    window.location.href = "https://www.linkedin.com/in/lucas-zorzete-6035a4369?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYGxznPzCRMe%2BrYDbaf9DoQ%3D%3D";
+}
+
 function toSectionProj() {
     const sectionProj = document.getElementById('projects');
     const sidebar = document.getElementById('sideBar');
