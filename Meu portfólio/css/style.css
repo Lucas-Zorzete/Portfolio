@@ -341,7 +341,7 @@ main {
     margin: 15px;
 }
 
-.btn-project button {
+.btn-project .active {
     font-weight: 600;
     font-size: 1.5em;
     font-family: var(--quick);
@@ -352,7 +352,7 @@ main {
     background-color: rgba(255,255,255,0.7);
 } 
 
-.btn-project button:hover {
+.btn-project .active:hover {
     background-color: var(--color-two);
     border-radius: 10px;
     transform: scale(1.1);
@@ -361,6 +361,17 @@ main {
 .btn-project a {
     text-decoration: none;
     color: #000000;
+}
+
+.inactive {
+    pointer-events: none;
+    background-color: rgb(100, 100, 100);
+    font-weight: 600;
+    font-size: 1.5em;
+    font-family: var(--quick);
+    padding: .5rem;
+    border-radius: 7px;
+    border: none;
 }
 
 .faixa {
