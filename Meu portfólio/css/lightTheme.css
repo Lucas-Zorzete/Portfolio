@@ -108,11 +108,25 @@ body.lightTheme .project:hover {
 }
 
 body.lightTheme .info-project h2 {
-    color: #e2e2e2;
+    color: #0c0c0c;
+}
+
+body.lightTheme .info-project {
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 body.lightTheme .btn-project button:hover a {
     color: #e2e2e2
+}
+body.lightTheme .btn-project button a {
+    color: #e2e2e2
+}
+
+body.lightTheme .btn-project button:hover {
+    background-color: rgb(31, 72, 255);
+}
+body.lightTheme .btn-project button {
+    background-color: #313131
 }
 
 body.lightTheme .box-info-about p {
