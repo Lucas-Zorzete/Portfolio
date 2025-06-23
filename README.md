@@ -55,7 +55,7 @@ Nele você encontra:
 
 ## 📫 Contato
 
-- [LinkedIn]([https://www.linkedin.com/in/seulink/](https://www.linkedin.com/in/lucas-zorzete-6035a4369/))
+- [LinkedIn]((https://www.linkedin.com/in/lucas-zorzete-6035a4369/))
 - [Email](lucasreis.zorzete@gmail.com)
 - [GitHub](https://github.com/LZReis)
 
