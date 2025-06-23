@@ -16,7 +16,6 @@ Nele você encontra:
 - 🎨 Meu processo de design (feito no Figma)
 - 💬 Meus contatos e redes sociais
 - 🌗 Modo claro/escuro
-- ⚡ Animações e interações com JavaScript
 
 ---
 
@@ -26,7 +25,6 @@ Nele você encontra:
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="40"/>
 </div>
 
 ---
@@ -34,13 +32,14 @@ Nele você encontra:
 ## 📸 Screenshots (opcional)
 
 > **Exemplo:**  
-> ![Screenshot do portfólio](coloque-o-link-da-imagem-aqui)
+> ![Screenshot do portfólio](https://github.com/user-attachments/assets/879ee1ea-60b1-4f9b-8fe8-906f9085e18a)
+)
 
 ---
 
 ## 📍 Link para o site
 
-🔗 [Acesse meu portfólio online](https://symphonious-syrniki-fbabeb.netlify.app/)
+🔗 [Acesse meu portfólio online](https://lzreis-portfolio.netlify.app/)
 
 ---
 
@@ -49,14 +48,15 @@ Nele você encontra:
 - Adicionar mais projetos profissionais
 - Melhorar SEO
 - Otimizar desempenho mobile
-- Implementar novas animações com JavaScript
+- Novos idiomas
+- Implementar novas animações e interações com JavaScript
 
 ---
 
 ## 📫 Contato
 
-- [LinkedIn](https://www.linkedin.com/in/seulink/)
-- [Email](mailto:seuemail@gmail.com)
+- [LinkedIn]([https://www.linkedin.com/in/seulink/](https://www.linkedin.com/in/lucas-zorzete-6035a4369/))
+- [Email](lucasreis.zorzete@gmail.com)
 - [GitHub](https://github.com/LZReis)
 
 ---
