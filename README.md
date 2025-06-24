@@ -29,7 +29,7 @@ Nele você encontra:
 
 ---
 
-## 📸 Screenshots (opcional)
+## 📸 Screenshot
 
 > **Exemplo:**  
 > ![Screenshot do portfólio](https://github.com/user-attachments/assets/879ee1ea-60b1-4f9b-8fe8-906f9085e18a)
