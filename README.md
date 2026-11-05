@@ -1,9 +1,6 @@
-<h1 align="center">🌐 Meu Portfólio Pessoal</h1>
+Bem-vindo ao repositório do meu portfólio!<br/>
+Aqui mostro meus projetos, minhas habilidades e um pouco sobre minha trajetória como desenvolvedor Front-End.
 
-<p align="center">
-  Bem-vindo ao repositório do meu portfólio!<br/>
-  Aqui mostro meus projetos, minhas habilidades e um pouco sobre minha trajetória como desenvolvedor Front-End.
-</p>
 
 ---
 
