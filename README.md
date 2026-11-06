@@ -8,10 +8,10 @@ Aqui mostro meus projetos, minhas habilidades e um pouco sobre minha trajetória
 Este é o meu **site portfólio**, desenvolvido com foco em **design moderno, responsividade** e **boa experiência de usuário (UI/UX)**.
 
 Nele você encontra:
-- 🧑‍💻 Meus projetos pessoais e profissionais
-- 🎨 Meu processo de design (feito no Figma)
-- 💬 Meus contatos e redes sociais
-- 🌗 Modo claro/escuro
+- Meus projetos pessoais e profissionais
+- Meu processo de design (feito no Figma)
+- Meus contatos e redes sociais
+- Modo claro/escuro
 
 ---
 
