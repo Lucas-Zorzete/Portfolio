@@ -29,7 +29,6 @@ Nele você encontra:
 
 > **Exemplo:**  
 > ![Screenshot do portfólio](https://github.com/user-attachments/assets/879ee1ea-60b1-4f9b-8fe8-906f9085e18a)
-)
 
 ---
 
